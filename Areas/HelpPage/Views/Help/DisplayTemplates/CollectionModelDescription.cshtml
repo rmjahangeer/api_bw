@@ -1,0 +1,6 @@
+@using BW.Api.Areas.HelpPage.ModelDescriptions
+@model BW.Api.Areas.HelpPage.ModelDescriptions.CollectionModelDescription
+@if (Model.ElementDescription is ComplexTypeModelDescription)
+{
+    @Html.DisplayFor(m => m.ElementDescription)
+}
